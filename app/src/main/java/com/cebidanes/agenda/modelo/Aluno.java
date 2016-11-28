@@ -1,9 +1,11 @@
 package com.cebidanes.agenda.modelo;
 
+import java.io.Serializable;
+
 /**
  * Created by jcebidanes on 25/11/2016.
  */
-public class Aluno {
+public class Aluno implements Serializable{
 
     private Long id;
     private String nome;
@@ -11,6 +13,7 @@ public class Aluno {
     private String telefone;
     private String site;
     private Double nota;
+    private String caminhoFoto;
 
     public Long getId() {
         return id;
@@ -58,6 +61,14 @@ public class Aluno {
 
     public void setNota(Double nota) {
         this.nota = nota;
+    }
+
+    public String getCaminhoFoto() {
+        return caminhoFoto;
+    }
+
+    public void setCaminhoFoto(String caminhoFoto) {
+        this.caminhoFoto = caminhoFoto;
     }
 
     @Override
