@@ -80,7 +80,8 @@ public class ListaAlunosActivity extends AppCompatActivity {
         String[] permissoes = new String[]{
                 Manifest.permission.CALL_PHONE,
                 Manifest.permission.RECEIVE_SMS,
-                Manifest.permission.WRITE_EXTERNAL_STORAGE
+                Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                Manifest.permission.INTERNET
         };
         PermissionUtils.validate(this, 0, permissoes);
 
