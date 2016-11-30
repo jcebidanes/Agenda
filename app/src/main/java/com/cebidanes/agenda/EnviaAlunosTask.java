@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * Created by jcebidanes on 28/11/2016.
  */
-public class EnviaAlunosTask extends AsyncTask<Void, Void, String> {
+class EnviaAlunosTask extends AsyncTask<Void, Void, String> {
     private Context context;
     private ProgressDialog dialog;
 

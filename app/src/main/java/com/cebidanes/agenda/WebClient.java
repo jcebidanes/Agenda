@@ -13,7 +13,8 @@ import java.util.Scanner;
 public class WebClient {
     public String post(String json) {
         try {
-            URL url = new URL("http://10.0.2.2:8080/mobile");
+            // Usar 10.0.2.2 no lugar de localhost/127.0.0.1 para testar localmente
+            URL url = new URL("http://10.0.2.2:8080/samuweb/rest/mobile/media");
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setRequestProperty("Content-type", "application/json");
             connection.setRequestProperty("Accept", "application/json");
