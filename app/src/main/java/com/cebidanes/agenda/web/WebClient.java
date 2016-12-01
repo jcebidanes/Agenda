@@ -1,4 +1,4 @@
-package com.cebidanes.agenda;
+package com.cebidanes.agenda.web;
 
 import java.io.IOException;
 import java.io.PrintStream;

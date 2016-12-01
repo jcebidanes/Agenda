@@ -1,12 +1,14 @@
-package com.cebidanes.agenda;
+package com.cebidanes.agenda.tasks;
 
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.widget.Toast;
 
+import com.cebidanes.agenda.converter.AlunoConverter;
 import com.cebidanes.agenda.dao.AlunoDAO;
 import com.cebidanes.agenda.modelo.Aluno;
+import com.cebidanes.agenda.web.WebClient;
 
 import java.util.List;
 
@@ -14,7 +16,7 @@ import java.util.List;
 /**
  * Created by jcebidanes on 28/11/2016.
  */
-class EnviaAlunosTask extends AsyncTask<Void, Void, String> {
+public class EnviaAlunosTask extends AsyncTask<Void, Void, String> {
     private Context context;
     private ProgressDialog dialog;
 

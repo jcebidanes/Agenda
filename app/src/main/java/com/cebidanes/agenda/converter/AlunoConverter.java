@@ -1,4 +1,4 @@
-package com.cebidanes.agenda;
+package com.cebidanes.agenda.converter;
 
 import com.cebidanes.agenda.modelo.Aluno;
 
