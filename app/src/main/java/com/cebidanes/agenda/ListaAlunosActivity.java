@@ -19,6 +19,7 @@ import android.widget.Toast;
 import com.cebidanes.agenda.adpter.AlunosAdapter;
 import com.cebidanes.agenda.dao.AlunoDAO;
 import com.cebidanes.agenda.modelo.Aluno;
+import com.cebidanes.agenda.tasks.EnviaAlunosTask;
 import com.cebidanes.agenda.utils.PermissionUtils;
 
 import java.util.List;
@@ -167,7 +168,7 @@ public class ListaAlunosActivity extends AppCompatActivity {
                 break;
 
             case R.id.menu_baixar_provas:
-                Intent intent = new Intent(this, ProvaActivity.class);
+                Intent intent = new Intent(this, ProvasActivity.class);
                 startActivity(intent);
                 break;
         }

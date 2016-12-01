@@ -13,7 +13,7 @@ import com.cebidanes.agenda.modelo.Prova;
 import java.util.Arrays;
 import java.util.List;
 
-public class ProvaActivity extends AppCompatActivity {
+public class ProvasActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +36,7 @@ public class ProvaActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Prova prova = (Prova) parent.getItemAtPosition(position);
-                Intent vaiParaDetalhesProva = new Intent(ProvaActivity.this, DetalhesProvaActivity.class);
+                Intent vaiParaDetalhesProva = new Intent(ProvasActivity.this, DetalhesProvaActivity.class);
                 vaiParaDetalhesProva.putExtra("prova", prova);
                 startActivity(vaiParaDetalhesProva);
             }
